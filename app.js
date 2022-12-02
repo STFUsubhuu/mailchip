@@ -2,6 +2,7 @@ const express = require("express");
 const bodyparser = require("body-parser");
 const request = require("request");
 const https = require("https");
+const port = process.env.PORT || 3000
 
 const app = express();
 app.use(express.static("file"));
@@ -60,7 +61,7 @@ const request = https.request(url, options, function(response){
 
 });
 
-app.listen(process.rev.PORT || 2000, function(){
+app.listen(port || 2000, function(){
   console.log("Your server started");
 });
 
