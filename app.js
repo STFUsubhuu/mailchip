@@ -32,10 +32,11 @@ app.post("/", function(req, res){
   };
 
 const jasonData = JSON.stringify(data);
-const url = "https://us13.api.mailchimp.com/3.0/lists/971dab3f18"
+
+const url = "https://us21.api.mailchimp.com/3.0/lists/c4b1f3c9f0"
 const options = {
   method: "POST",
-  auth: "subhu:102359824a8d724a89a37b5667a3a936-us13"
+  auth: "subhu:12828e5d851dbcd271e353b6f700686d-us21"
 }
 
 app.post("/fail", function(req, res){
